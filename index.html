@@ -1,132 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pinguecula — the sun-spot on your eye, explained</title>
-<meta name="description" content="A clear, plain-language guide to pinguecula: what it is, why it forms, and how to keep it from getting worse.">
+<title>Pinguecula — a clear guide to the yellow spot on your eye</title>
+<meta name="description" content="A plain-language, evidence-based guide to pinguecula for patients in Victoria: what it is, why it happens, how to manage it, and when to seek help.">
 <link rel="icon" href="assets/favicon.png" type="image/png">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="antialiased">
+<a href="#main" class="skip-link">Skip to content</a>
 
-  <!-- Header -->
-  <header class="sticky top-0 z-40 bg-[var(--cream)]/90 backdrop-blur border-b border-[var(--line)]">
-    <div class="max-w-6xl mx-auto px-6 md:px-10 flex items-center justify-between h-20">
-      <a href="index.html" class="flex items-center gap-3">
-        <img src="assets/logo.png" alt="Pinguecula logo" class="w-10 h-10 rounded-md">
-        <span class="font-display text-2xl text-[var(--terracotta-ink)]">pinguecula</span>
-      </a>
-      <nav class="hidden md:flex items-center gap-8 text-[15px]">
-        <a href="index.html" data-nav-link class="nav-link">Home</a>
-        <a href="about.html" data-nav-link class="nav-link">About it</a>
-        <a href="contact.html" data-nav-link class="nav-link">Ask an expert</a>
-      </nav>
-      <button id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden p-2 -mr-2" aria-label="Toggle menu">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-      </button>
-    </div>
-    <div id="mobile-menu" class="hidden md:hidden border-t border-[var(--line)] px-6 py-4 flex flex-col gap-4 text-[15px]">
+<!-- Header -->
+<header class="sticky top-0 z-40 bg-[var(--cream)]/90 backdrop-blur border-b border-[var(--line)]">
+  <div class="max-w-6xl mx-auto px-5 md:px-10 flex items-center justify-between h-20">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="assets/logo.png" alt="Pinguecula logo" class="w-10 h-10 rounded-md">
+      <span class="font-display text-2xl text-[var(--terracotta-ink)]">pinguecula</span>
+    </a>
+    <nav aria-label="Primary" class="hidden md:flex items-center gap-7 text-[15px]">
       <a href="index.html" data-nav-link class="nav-link">Home</a>
-      <a href="about.html" data-nav-link class="nav-link">About it</a>
-      <a href="contact.html" data-nav-link class="nav-link">Ask an expert</a>
+      <a href="about.html" data-nav-link class="nav-link">The condition</a>
+      <a href="managing.html" data-nav-link class="nav-link">Managing it</a>
+      <a href="care-team.html" data-nav-link class="nav-link">Your care team</a>
+      <a href="contact.html" data-nav-link class="nav-link">Contact &amp; help</a>
+    </nav>
+    <button id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden p-2 -mr-2" aria-label="Toggle menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden border-t border-[var(--line)] px-5 py-4 flex flex-col gap-4 text-[15px]">
+    <a href="index.html" data-nav-link class="nav-link">Home</a>
+    <a href="about.html" data-nav-link class="nav-link">The condition</a>
+    <a href="managing.html" data-nav-link class="nav-link">Managing it</a>
+    <a href="care-team.html" data-nav-link class="nav-link">Your care team</a>
+    <a href="contact.html" data-nav-link class="nav-link">Contact &amp; help</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- Hero -->
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0 dot-field-light" aria-hidden="true"></div>
+  <div class="max-w-6xl mx-auto px-5 md:px-10 pt-14 pb-16 md:pt-24 md:pb-24 relative grid md:grid-cols-[1.1fr_0.9fr] gap-12 md:gap-14 items-center">
+    <div data-reveal>
+      <span class="badge badge-sun mb-5">Benign &middot; very common &middot; caused by UV</span>
+      <h1 class="font-display text-[2.5rem] leading-[1.08] md:text-6xl md:leading-[1.04] text-[var(--ink)]">
+        That yellow spot on your eye, explained plainly
+      </h1>
+      <p class="mt-6 text-[17px] leading-relaxed text-[var(--ink-soft)] prose-measure">
+        A pinguecula (say <em>pin-GWEK-you-la</em>) is a small, harmless bump on the white of the eye. It's the eye's version of sun damage &mdash; and in sunny Victoria it's something many adults will develop, especially people who spend long hours outdoors. This site explains what it is, how to keep it comfortable, and exactly when to get it checked.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="about.html" class="btn-primary px-6 py-3 rounded-full text-[15px] font-medium">Understand the condition</a>
+        <a href="#urgent" class="btn-urgent px-6 py-3 rounded-full text-[15px] font-medium">When to seek help now</a>
+      </div>
+      <p class="mt-5 text-[13px] text-[var(--ink-soft)]">Written for patients and their families. General information only &mdash; not a substitute for a personal eye examination.</p>
     </div>
-  </header>
-
-  <!-- Hero -->
-  <section class="relative overflow-hidden">
-    <div class="absolute inset-0 dot-field-light" aria-hidden="true"></div>
-    <div class="max-w-6xl mx-auto px-6 md:px-10 pt-16 pb-20 md:pt-24 md:pb-28 relative grid md:grid-cols-[1.1fr_0.9fr] gap-14 items-center">
-      <div data-reveal>
-        <p class="text-[var(--terracotta-deep)] text-sm tracking-wide mb-4">A small yellow bump. A very common one.</p>
-        <h1 class="font-display text-[2.6rem] leading-[1.08] md:text-6xl md:leading-[1.05] text-[var(--ink)]">
-          The sun leaves<br>its mark on the<br>eye too.
-        </h1>
-        <p class="mt-6 text-[17px] leading-relaxed text-[var(--ink-soft)] max-w-md">
-          A pinguecula is a harmless, raised patch that forms on the white of the eye after years of sun, wind, and dust. Most people never need treatment for it — but it helps to know what you're looking at.
-        </p>
-        <div class="mt-9 flex flex-wrap gap-4">
-          <a href="about.html" class="btn-primary px-6 py-3 rounded-full text-[15px] font-medium">Learn what it is</a>
-          <a href="contact.html" class="btn-ghost px-6 py-3 rounded-full text-[15px] font-medium">Ask an expert</a>
-        </div>
+    <div class="relative flex justify-center" data-reveal>
+      <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-[28px] bg-[var(--terracotta)] shadow-[0_20px_50px_-15px_rgba(122,66,39,0.45)] flex items-center justify-center">
+        <div class="absolute inset-0 dot-field rounded-[28px]" aria-hidden="true"></div>
+        <img src="assets/logo.png" alt="" class="w-40 h-40 md:w-48 md:h-48 hero-rays" aria-hidden="true">
       </div>
-
-      <div class="relative flex justify-center" data-reveal>
-        <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-[28px] bg-[var(--terracotta)] shadow-[0_20px_50px_-15px_rgba(122,66,39,0.45)] flex items-center justify-center">
-          <div class="absolute inset-0 dot-field rounded-[28px]" aria-hidden="true"></div>
-          <img src="assets/logo.png" alt="" class="w-40 h-40 md:w-48 md:h-48 hero-rays" aria-hidden="true">
-        </div>
-        <div class="absolute -bottom-5 -left-5 bg-[var(--cream)] card-edge rounded-2xl px-5 py-3 shadow-sm hidden sm:block">
-          <p class="text-xs text-[var(--ink-soft)]">Main cause</p>
-          <p class="font-display text-lg text-[var(--ink)]">UV exposure</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Quick facts -->
-  <section class="border-t border-[var(--line)]">
-    <div class="max-w-6xl mx-auto px-6 md:px-10 py-16 md:py-20">
-      <div class="max-w-lg mb-12">
-        <h2 class="font-display text-3xl md:text-[2.25rem] text-[var(--ink)]">Three things worth knowing</h2>
-      </div>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="card-edge rounded-2xl p-7 bg-[var(--cream-deep)]/40">
-          <div class="w-9 h-9 rounded-full bg-[var(--sun)] mb-5"></div>
-          <h3 class="font-display text-xl mb-2 text-[var(--ink)]">It's not dangerous</h3>
-          <p class="text-[15px] leading-relaxed text-[var(--ink-soft)]">A pinguecula is a benign buildup of protein, fat, and calcium in the eye's clear surface layer. It doesn't turn into cancer and rarely affects vision.</p>
-        </div>
-        <div class="card-edge rounded-2xl p-7 bg-[var(--cream-deep)]/40">
-          <div class="w-9 h-9 rounded-full bg-[var(--terracotta)] mb-5"></div>
-          <h3 class="font-display text-xl mb-2 text-[var(--ink)]">Outdoor life is the trigger</h3>
-          <p class="text-[15px] leading-relaxed text-[var(--ink-soft)]">Years of UV light, wind, and dry air — think surfers, farmers, and anyone squinting outdoors — are the usual reasons one forms.</p>
-        </div>
-        <div class="card-edge rounded-2xl p-7 bg-[var(--cream-deep)]/40">
-          <div class="w-9 h-9 rounded-full bg-[var(--terracotta-ink)] mb-5"></div>
-          <h3 class="font-display text-xl mb-2 text-[var(--ink)]">Prevention is simple</h3>
-          <p class="text-[15px] leading-relaxed text-[var(--ink-soft)]">Wraparound sunglasses and a wide-brimmed hat cut UV exposure dramatically and are the single best way to slow one down.</p>
-        </div>
+      <div class="absolute -bottom-5 -left-4 bg-[var(--cream)] card-edge rounded-2xl px-5 py-3 shadow-sm hidden sm:block">
+        <p class="text-xs text-[var(--ink-soft)]">Main cause</p>
+        <p class="font-display text-lg text-[var(--ink)]">Years of UV light</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Explainer strip -->
-  <section class="bg-[var(--terracotta-ink)] text-[var(--cream)]">
-    <div class="max-w-6xl mx-auto px-6 md:px-10 py-16 md:py-20 grid md:grid-cols-2 gap-12 items-center">
-      <div>
-        <h2 class="font-display text-3xl md:text-4xl leading-tight">Where it sits, and why it shows up on the sun-facing side first</h2>
-      </div>
-      <div>
-        <p class="text-[15px] leading-relaxed text-[var(--cream)]/85">
-          Most pingueculae appear on the side of the eye closest to the nose, since that's where sunlight reflects most directly off the bridge of the nose. Fishermen, farmers, welders, and lifeguards see it often — anyone who spends long hours in bright, dry, or windy conditions.
-        </p>
-        <a href="about.html" class="inline-flex items-center gap-2 mt-6 text-sm border-b border-[var(--cream)]/50 hover:border-[var(--cream)] transition-colors">
-          Read the full explanation
-        </a>
-      </div>
+<!-- Aim & purpose -->
+<section class="border-t border-[var(--line)] bg-[var(--cream-deep)]/50">
+  <div class="max-w-6xl mx-auto px-5 md:px-10 py-12 md:py-14 grid md:grid-cols-[0.7fr_1.3fr] gap-8 items-start">
+    <h2 class="font-display text-2xl md:text-3xl text-[var(--terracotta-ink)]">Why this site exists</h2>
+    <p class="text-[16px] leading-relaxed text-[var(--ink-soft)] prose-measure">
+      Our aim is to help you recognise a pinguecula, understand why it forms, and feel confident about what to do next &mdash; from simple self-care to knowing the warning signs that mean you should be seen promptly. Everything here is written in everyday language, backed by clinical guidelines and research, and points you to the right health professional at the right time. If a word is unfamiliar, we explain it the first time we use it.
+    </p>
+  </div>
+</section>
+
+<!-- Urgent advice -->
+<section id="urgent" class="max-w-6xl mx-auto px-5 md:px-10 py-12 md:py-16 scroll-mt-24">
+  <div class="callout-urgent p-6 md:p-8">
+    <div class="flex items-center gap-3 mb-3">
+      <span class="badge badge-urgent">Seek care promptly</span>
+      <h2 class="font-display text-xl md:text-2xl text-[var(--urgent)]">When a spot on your eye needs urgent attention</h2>
     </div>
-  </section>
+    <p class="text-[15px] text-[var(--ink)] mb-4 prose-measure">A pinguecula itself is harmless. But some symptoms are <strong>not</strong> a pinguecula and shouldn't wait. Contact an optometrist, your GP, or an emergency department the same day if you have:</p>
+    <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-2 text-[15px] text-[var(--ink)]">
+      <li class="flex gap-2"><span class="text-[var(--urgent)] font-bold">&bull;</span> Sudden loss or blurring of vision</li>
+      <li class="flex gap-2"><span class="text-[var(--urgent)] font-bold">&bull;</span> Significant eye pain, not just mild grittiness</li>
+      <li class="flex gap-2"><span class="text-[var(--urgent)] font-bold">&bull;</span> A spot that grows quickly, bleeds, or changes colour</li>
+      <li class="flex gap-2"><span class="text-[var(--urgent)] font-bold">&bull;</span> A growth spreading onto the clear central part of the eye</li>
+      <li class="flex gap-2"><span class="text-[var(--urgent)] font-bold">&bull;</span> New light sensitivity, discharge, or a red painful eye</li>
+      <li class="flex gap-2"><span class="text-[var(--urgent)] font-bold">&bull;</span> An eye injury or chemical splash</li>
+    </ul>
+    <p class="text-[14px] text-[var(--ink-soft)] mt-4">In an emergency call <strong>000</strong>. For urgent eye concerns in Victoria, the Royal Victorian Eye and Ear Hospital has a 24-hour emergency department.</p>
+  </div>
+</section>
 
-  <!-- CTA -->
-  <section class="max-w-6xl mx-auto px-6 md:px-10 py-20 md:py-24 text-center">
-    <h2 class="font-display text-3xl md:text-4xl text-[var(--ink)] max-w-xl mx-auto">Noticed a new spot on your eye?</h2>
-    <p class="mt-4 text-[var(--ink-soft)] max-w-md mx-auto">It's almost always nothing urgent — but an eye care professional can confirm it in a five-minute look.</p>
-    <a href="contact.html" class="btn-primary inline-block mt-8 px-7 py-3 rounded-full text-[15px] font-medium">Get in touch</a>
-  </section>
+<!-- Quick links -->
+<section class="max-w-6xl mx-auto px-5 md:px-10 pb-6 md:pb-10">
+  <h2 class="font-display text-2xl md:text-3xl text-[var(--ink)] mb-8">Find what you need</h2>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+    <a href="about.html" class="card-edge rounded-2xl p-6 bg-[var(--cream)] hover:bg-[var(--cream-deep)]/50 transition-colors">
+      <div class="w-9 h-9 rounded-full bg-[var(--sun)] mb-4"></div>
+      <h3 class="font-display text-lg text-[var(--ink)] mb-1">The condition</h3>
+      <p class="text-sm text-[var(--ink-soft)]">What it is, what causes it, symptoms and how it differs from a pterygium.</p>
+    </a>
+    <a href="managing.html" class="card-edge rounded-2xl p-6 bg-[var(--cream)] hover:bg-[var(--cream-deep)]/50 transition-colors">
+      <div class="w-9 h-9 rounded-full bg-[var(--terracotta)] mb-4"></div>
+      <h3 class="font-display text-lg text-[var(--ink)] mb-1">Managing it</h3>
+      <p class="text-sm text-[var(--ink-soft)]">Self-care, treatments, prevention, and living with it day to day.</p>
+    </a>
+    <a href="care-team.html" class="card-edge rounded-2xl p-6 bg-[var(--cream)] hover:bg-[var(--cream-deep)]/50 transition-colors">
+      <div class="w-9 h-9 rounded-full bg-[var(--terracotta-deep)] mb-4"></div>
+      <h3 class="font-display text-lg text-[var(--ink)] mb-1">Your care team</h3>
+      <p class="text-sm text-[var(--ink-soft)]">Who helps, referral pathways, and culturally safe eye care.</p>
+    </a>
+    <a href="contact.html" class="card-edge rounded-2xl p-6 bg-[var(--cream)] hover:bg-[var(--cream-deep)]/50 transition-colors">
+      <div class="w-9 h-9 rounded-full bg-[var(--terracotta-ink)] mb-4"></div>
+      <h3 class="font-display text-lg text-[var(--ink)] mb-1">Contact &amp; help</h3>
+      <p class="text-sm text-[var(--ink-soft)]">Ask a question, find support services, and see our references.</p>
+    </a>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="border-t border-[var(--line)]">
-    <div class="max-w-6xl mx-auto px-6 md:px-10 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
+<!-- Who it affects -->
+<section class="max-w-6xl mx-auto px-5 md:px-10 py-12 md:py-16">
+  <div class="grid md:grid-cols-[0.8fr_1.2fr] gap-8 items-start">
+    <h2 class="font-display text-2xl md:text-3xl text-[var(--ink)]">How common is it?</h2>
+    <div>
+      <div class="grid sm:grid-cols-3 gap-5 mb-6">
+        <div class="card-edge rounded-2xl p-6 bg-[var(--cream-deep)]/40">
+          <p class="font-display text-4xl text-[var(--terracotta-deep)]">~70%</p>
+          <p class="text-sm text-[var(--ink-soft)] mt-1">of older adults in the Australian Blue Mountains Eye Study had a pinguecula<sup class="cite"><a href="contact.html#references">[6]</a></sup></p>
+        </div>
+        <div class="card-edge rounded-2xl p-6 bg-[var(--cream-deep)]/40">
+          <p class="font-display text-4xl text-[var(--terracotta-deep)]">Both eyes</p>
+          <p class="text-sm text-[var(--ink-soft)] mt-1">are usually affected; most people have at least one by age 70<sup class="cite"><a href="contact.html#references">[2]</a></sup></p>
+        </div>
+        <div class="card-edge rounded-2xl p-6 bg-[var(--cream-deep)]/40">
+          <p class="font-display text-4xl text-[var(--terracotta-deep)]">Outdoor work</p>
+          <p class="text-sm text-[var(--ink-soft)] mt-1">is the strongest everyday risk factor for developing one<sup class="cite"><a href="contact.html#references">[1,8]</a></sup></p>
+        </div>
+      </div>
+      <p class="text-[15px] leading-relaxed text-[var(--ink-soft)] prose-measure">
+        Pinguecula becomes more common with age because it reflects a lifetime of sun exposure. It's especially frequent in people who work or play outdoors &mdash; farmers, tradespeople, gardeners, fishers, surfers and lifeguards &mdash; and in hot, dry, dusty or windy conditions like much of Australia.<sup class="cite"><a href="contact.html#references">[1,3,4]</a></sup>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Reassurance -->
+<section class="max-w-6xl mx-auto px-5 md:px-10 pb-16 md:pb-24">
+  <div class="callout-safe p-6 md:p-8">
+    <div class="flex items-center gap-3 mb-2">
+      <span class="badge badge-safe">Reassuring to know</span>
+    </div>
+    <p class="text-[16px] text-[var(--ink)] prose-measure">
+      A pinguecula is <strong>not cancer</strong> and does not spread inside the eye. For most people it never affects sight and needs no treatment beyond sun protection and, if the eye feels dry, some lubricating drops.<sup class="cite"><a href="contact.html#references">[1,3,5]</a></sup> Knowing what it is often removes the worry.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="border-t border-[var(--line)] bg-[var(--cream-deep)]/40">
+  <div class="max-w-6xl mx-auto px-5 md:px-10 py-10">
+    <div class="callout p-5 mb-8">
+      <p class="text-[14px] text-[var(--ink)] prose-measure"><strong>Acknowledgement of Country.</strong> We acknowledge the Wurundjeri Woi-wurrung and Bunurong/Boon Wurrung peoples of the Kulin Nation as the Traditional Owners of the land on which our Melbourne practice stands. We pay our respects to their Elders past and present, and recognise their continuing connection to land, waters and culture &mdash; including caring for eye health and wellbeing.<sup class="cite"><a href="contact.html#references">[22]</a></sup></p>
+    </div>
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
       <div class="flex items-center gap-3">
         <img src="assets/logo.png" alt="Pinguecula logo" class="w-7 h-7 rounded">
         <span class="font-display text-lg text-[var(--terracotta-ink)]">pinguecula</span>
       </div>
-      <p class="text-xs text-[var(--ink-soft)] text-center">This site offers general information only and isn't a substitute for advice from an eye care professional.</p>
-      <p class="text-xs text-[var(--ink-soft)]">&copy; 2026 Pinguecula</p>
+      <p class="text-xs text-[var(--ink-soft)] max-w-md">This website provides general information only and is not a substitute for advice from a qualified eye care professional. Always seek personal assessment for your own eyes.</p>
+      <p class="text-xs text-[var(--ink-soft)]">&copy; 2026 Pinguecula patient guide</p>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
