@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Pinguecula</title>
+<meta name="description" content="Have a question about a pinguecula? Send us a message.">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-[var(--cream)]/90 backdrop-blur border-b border-[var(--line)]">
+    <div class="max-w-6xl mx-auto px-6 md:px-10 flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/logo.png" alt="Pinguecula logo" class="w-10 h-10 rounded-md">
+        <span class="font-display text-2xl text-[var(--terracotta-ink)]">pinguecula</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-[15px]">
+        <a href="index.html" data-nav-link class="nav-link">Home</a>
+        <a href="about.html" data-nav-link class="nav-link">About it</a>
+        <a href="contact.html" data-nav-link class="nav-link">Ask an expert</a>
+      </nav>
+      <button id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden p-2 -mr-2" aria-label="Toggle menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-[var(--line)] px-6 py-4 flex flex-col gap-4 text-[15px]">
+      <a href="index.html" data-nav-link class="nav-link">Home</a>
+      <a href="about.html" data-nav-link class="nav-link">About it</a>
+      <a href="contact.html" data-nav-link class="nav-link">Ask an expert</a>
+    </div>
+  </header>
+
+  <section class="relative overflow-hidden border-b border-[var(--line)]">
+    <div class="absolute inset-0 dot-field-light" aria-hidden="true"></div>
+    <div class="max-w-6xl mx-auto px-6 md:px-10 pt-16 pb-16 md:pt-20 md:pb-20 relative grid md:grid-cols-[1fr_1.1fr] gap-14">
+
+      <div data-reveal>
+        <p class="text-[var(--terracotta-deep)] text-sm mb-4">Ask an expert</p>
+        <h1 class="font-display text-4xl md:text-[2.75rem] leading-tight text-[var(--ink)]">Tell us what you're noticing</h1>
+        <p class="mt-6 text-[15.5px] leading-relaxed text-[var(--ink-soft)] max-w-sm">
+          Describe the spot, when you first saw it, and how your eye feels. We'll point you toward the right next step — whether that's simple reassurance or a recommendation to see someone in person.
+        </p>
+
+        <div class="mt-10 space-y-6">
+          <div class="flex gap-4">
+            <div class="w-10 h-10 rounded-full bg-[var(--terracotta)] shrink-0"></div>
+            <div>
+              <p class="text-sm text-[var(--ink-soft)]">Email</p>
+              <p class="font-display text-lg text-[var(--ink)]">hello@pinguecula.example</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="w-10 h-10 rounded-full bg-[var(--sun)] shrink-0"></div>
+            <div>
+              <p class="text-sm text-[var(--ink-soft)]">Response time</p>
+              <p class="font-display text-lg text-[var(--ink)]">Within two business days</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10 card-edge rounded-2xl p-6 bg-[var(--cream-deep)]/40 max-w-sm">
+          <p class="text-sm leading-relaxed text-[var(--ink-soft)]">This isn't an emergency line. If you have sudden vision loss, severe pain, or an eye injury, contact an eye care provider or urgent care directly.</p>
+        </div>
+      </div>
+
+      <div data-reveal>
+        <form id="contact-form" novalidate class="card-edge rounded-2xl p-7 md:p-9 bg-white/60">
+          <div class="mb-6">
+            <label for="name" class="block text-sm mb-2 text-[var(--ink)]">Name</label>
+            <input id="name" name="name" type="text" class="w-full rounded-lg border border-[var(--line)] bg-[var(--cream)] px-4 py-3 text-[15px] focus:outline-none" placeholder="Your name">
+            <p id="name-error" class="hidden text-xs mt-2 text-[var(--terracotta-deep)]"></p>
+          </div>
+
+          <div class="mb-6">
+            <label for="email" class="block text-sm mb-2 text-[var(--ink)]">Email</label>
+            <input id="email" name="email" type="email" class="w-full rounded-lg border border-[var(--line)] bg-[var(--cream)] px-4 py-3 text-[15px] focus:outline-none" placeholder="you@example.com">
+            <p id="email-error" class="hidden text-xs mt-2 text-[var(--terracotta-deep)]"></p>
+          </div>
+
+          <div class="mb-6">
+            <label for="topic" class="block text-sm mb-2 text-[var(--ink)]">What's this about?</label>
+            <select id="topic" name="topic" class="w-full rounded-lg border border-[var(--line)] bg-[var(--cream)] px-4 py-3 text-[15px] focus:outline-none">
+              <option>A new spot I've noticed</option>
+              <option>Redness or irritation</option>
+              <option>Prevention advice</option>
+              <option>Something else</option>
+            </select>
+          </div>
+
+          <div class="mb-7">
+            <label for="message" class="block text-sm mb-2 text-[var(--ink)]">Message</label>
+            <textarea id="message" name="message" rows="5" class="w-full rounded-lg border border-[var(--line)] bg-[var(--cream)] px-4 py-3 text-[15px] focus:outline-none resize-none" placeholder="What are you noticing, and since when?"></textarea>
+            <p id="message-error" class="hidden text-xs mt-2 text-[var(--terracotta-deep)]"></p>
+          </div>
+
+          <button type="submit" class="btn-primary w-full py-3 rounded-full text-[15px] font-medium">Send message</button>
+          <p id="form-status" role="status" aria-live="polite" class="text-sm mt-4"></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-[var(--line)]">
+    <div class="max-w-6xl mx-auto px-6 md:px-10 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <img src="assets/logo.png" alt="Pinguecula logo" class="w-7 h-7 rounded">
+        <span class="font-display text-lg text-[var(--terracotta-ink)]">pinguecula</span>
+      </div>
+      <p class="text-xs text-[var(--ink-soft)] text-center">This site offers general information only and isn't a substitute for advice from an eye care professional.</p>
+      <p class="text-xs text-[var(--ink-soft)]">&copy; 2026 Pinguecula</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

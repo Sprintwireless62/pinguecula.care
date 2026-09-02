@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pinguecula — the sun-spot on your eye, explained</title>
+<meta name="description" content="A clear, plain-language guide to pinguecula: what it is, why it forms, and how to keep it from getting worse.">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-[var(--cream)]/90 backdrop-blur border-b border-[var(--line)]">
+    <div class="max-w-6xl mx-auto px-6 md:px-10 flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/logo.png" alt="Pinguecula logo" class="w-10 h-10 rounded-md">
+        <span class="font-display text-2xl text-[var(--terracotta-ink)]">pinguecula</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-[15px]">
+        <a href="index.html" data-nav-link class="nav-link">Home</a>
+        <a href="about.html" data-nav-link class="nav-link">About it</a>
+        <a href="contact.html" data-nav-link class="nav-link">Ask an expert</a>
+      </nav>
+      <button id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden p-2 -mr-2" aria-label="Toggle menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-[var(--line)] px-6 py-4 flex flex-col gap-4 text-[15px]">
+      <a href="index.html" data-nav-link class="nav-link">Home</a>
+      <a href="about.html" data-nav-link class="nav-link">About it</a>
+      <a href="contact.html" data-nav-link class="nav-link">Ask an expert</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 dot-field-light" aria-hidden="true"></div>
+    <div class="max-w-6xl mx-auto px-6 md:px-10 pt-16 pb-20 md:pt-24 md:pb-28 relative grid md:grid-cols-[1.1fr_0.9fr] gap-14 items-center">
+      <div data-reveal>
+        <p class="text-[var(--terracotta-deep)] text-sm tracking-wide mb-4">A small yellow bump. A very common one.</p>
+        <h1 class="font-display text-[2.6rem] leading-[1.08] md:text-6xl md:leading-[1.05] text-[var(--ink)]">
+          The sun leaves<br>its mark on the<br>eye too.
+        </h1>
+        <p class="mt-6 text-[17px] leading-relaxed text-[var(--ink-soft)] max-w-md">
+          A pinguecula is a harmless, raised patch that forms on the white of the eye after years of sun, wind, and dust. Most people never need treatment for it — but it helps to know what you're looking at.
+        </p>
+        <div class="mt-9 flex flex-wrap gap-4">
+          <a href="about.html" class="btn-primary px-6 py-3 rounded-full text-[15px] font-medium">Learn what it is</a>
+          <a href="contact.html" class="btn-ghost px-6 py-3 rounded-full text-[15px] font-medium">Ask an expert</a>
+        </div>
+      </div>
+
+      <div class="relative flex justify-center" data-reveal>
+        <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-[28px] bg-[var(--terracotta)] shadow-[0_20px_50px_-15px_rgba(122,66,39,0.45)] flex items-center justify-center">
+          <div class="absolute inset-0 dot-field rounded-[28px]" aria-hidden="true"></div>
+          <img src="assets/logo.png" alt="" class="w-40 h-40 md:w-48 md:h-48 hero-rays" aria-hidden="true">
+        </div>
+        <div class="absolute -bottom-5 -left-5 bg-[var(--cream)] card-edge rounded-2xl px-5 py-3 shadow-sm hidden sm:block">
+          <p class="text-xs text-[var(--ink-soft)]">Main cause</p>
+          <p class="font-display text-lg text-[var(--ink)]">UV exposure</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick facts -->
+  <section class="border-t border-[var(--line)]">
+    <div class="max-w-6xl mx-auto px-6 md:px-10 py-16 md:py-20">
+      <div class="max-w-lg mb-12">
+        <h2 class="font-display text-3xl md:text-[2.25rem] text-[var(--ink)]">Three things worth knowing</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="card-edge rounded-2xl p-7 bg-[var(--cream-deep)]/40">
+          <div class="w-9 h-9 rounded-full bg-[var(--sun)] mb-5"></div>
+          <h3 class="font-display text-xl mb-2 text-[var(--ink)]">It's not dangerous</h3>
+          <p class="text-[15px] leading-relaxed text-[var(--ink-soft)]">A pinguecula is a benign buildup of protein, fat, and calcium in the eye's clear surface layer. It doesn't turn into cancer and rarely affects vision.</p>
+        </div>
+        <div class="card-edge rounded-2xl p-7 bg-[var(--cream-deep)]/40">
+          <div class="w-9 h-9 rounded-full bg-[var(--terracotta)] mb-5"></div>
+          <h3 class="font-display text-xl mb-2 text-[var(--ink)]">Outdoor life is the trigger</h3>
+          <p class="text-[15px] leading-relaxed text-[var(--ink-soft)]">Years of UV light, wind, and dry air — think surfers, farmers, and anyone squinting outdoors — are the usual reasons one forms.</p>
+        </div>
+        <div class="card-edge rounded-2xl p-7 bg-[var(--cream-deep)]/40">
+          <div class="w-9 h-9 rounded-full bg-[var(--terracotta-ink)] mb-5"></div>
+          <h3 class="font-display text-xl mb-2 text-[var(--ink)]">Prevention is simple</h3>
+          <p class="text-[15px] leading-relaxed text-[var(--ink-soft)]">Wraparound sunglasses and a wide-brimmed hat cut UV exposure dramatically and are the single best way to slow one down.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Explainer strip -->
+  <section class="bg-[var(--terracotta-ink)] text-[var(--cream)]">
+    <div class="max-w-6xl mx-auto px-6 md:px-10 py-16 md:py-20 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="font-display text-3xl md:text-4xl leading-tight">Where it sits, and why it shows up on the sun-facing side first</h2>
+      </div>
+      <div>
+        <p class="text-[15px] leading-relaxed text-[var(--cream)]/85">
+          Most pingueculae appear on the side of the eye closest to the nose, since that's where sunlight reflects most directly off the bridge of the nose. Fishermen, farmers, welders, and lifeguards see it often — anyone who spends long hours in bright, dry, or windy conditions.
+        </p>
+        <a href="about.html" class="inline-flex items-center gap-2 mt-6 text-sm border-b border-[var(--cream)]/50 hover:border-[var(--cream)] transition-colors">
+          Read the full explanation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="max-w-6xl mx-auto px-6 md:px-10 py-20 md:py-24 text-center">
+    <h2 class="font-display text-3xl md:text-4xl text-[var(--ink)] max-w-xl mx-auto">Noticed a new spot on your eye?</h2>
+    <p class="mt-4 text-[var(--ink-soft)] max-w-md mx-auto">It's almost always nothing urgent — but an eye care professional can confirm it in a five-minute look.</p>
+    <a href="contact.html" class="btn-primary inline-block mt-8 px-7 py-3 rounded-full text-[15px] font-medium">Get in touch</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-[var(--line)]">
+    <div class="max-w-6xl mx-auto px-6 md:px-10 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <img src="assets/logo.png" alt="Pinguecula logo" class="w-7 h-7 rounded">
+        <span class="font-display text-lg text-[var(--terracotta-ink)]">pinguecula</span>
+      </div>
+      <p class="text-xs text-[var(--ink-soft)] text-center">This site offers general information only and isn't a substitute for advice from an eye care professional.</p>
+      <p class="text-xs text-[var(--ink-soft)]">&copy; 2026 Pinguecula</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
