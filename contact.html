@@ -3,72 +3,81 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact &amp; help — ask a question, support services & references</title>
-<meta name="description" content="Ask a question about a pinguecula, find support and eye-health services in Australia, and see the evidence and references behind this site.">
-<link rel="icon" href="assets/favicon.png" type="image/png">
+<title>Contact and help: ask a question, support services and references</title>
+<meta name="description" content="Ask a question about a pinguecula, find support and eye-health services in Australia, and read the references behind this site.">
+<meta name="author" content="Tasha Tahir">
+<link rel="icon" href="logo.png" type="image/png">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="style.css">
 </head>
-<body class="antialiased">
+<body>
 <a href="#main" class="skip-link">Skip to content</a>
 
+<<<<<<< HEAD
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b" style="border-color:var(--line)">
+  <div class="max-w-6xl mx-auto px-5 md:px-10 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2.5">
+      <img src="logo.png" alt="Pinguecula.care logo" class="w-9 h-9 rounded-md">
+      <span class="wordmark text-xl">pinguecula<span style="color:var(--ink-soft)">.care</span></span>
+=======
 <header class="sticky top-0 z-40 bg-[var(--cream)]/90 backdrop-blur border-b border-[var(--line)]">
   <div class="max-w-6xl mx-auto px-5 md:px-10 flex items-center justify-between h-20">
     <a href="index.html" class="flex items-center gap-3">
       <img src="logo.png" alt="Pinguecula logo" class="w-10 h-10 rounded-md">
       <span class="font-display text-2xl text-[var(--terracotta-ink)]">pinguecula</span>
+>>>>>>> 0526c2404c3f8a3568cedbf6b9dc65d70f77d506
     </a>
-    <nav aria-label="Primary" class="hidden md:flex items-center gap-7 text-[15px]">
+    <nav aria-label="Primary" class="hidden md:flex items-center gap-8 text-[15px]">
       <a href="index.html" data-nav-link class="nav-link">Home</a>
       <a href="about.html" data-nav-link class="nav-link">The condition</a>
       <a href="managing.html" data-nav-link class="nav-link">Managing it</a>
       <a href="care-team.html" data-nav-link class="nav-link">Your care team</a>
       <a href="contact.html" data-nav-link class="nav-link">Contact &amp; help</a>
     </nav>
-    <button id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden p-2 -mr-2" aria-label="Toggle menu">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-    </button>
+    <div class="flex items-center gap-2">
+      <a href="index.html#urgent" class="hidden sm:inline-flex btn btn-urgent" style="padding:.4rem .85rem;font-size:13px;">Urgent help</a>
+      <button id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden p-2 -mr-2" aria-label="Toggle menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
   </div>
-  <div id="mobile-menu" class="hidden md:hidden border-t border-[var(--line)] px-5 py-4 flex flex-col gap-4 text-[15px]">
+  <div id="mobile-menu" class="hidden md:hidden border-t px-5 py-4 flex flex-col gap-4 text-[15px]" style="border-color:var(--line)">
     <a href="index.html" data-nav-link class="nav-link">Home</a>
     <a href="about.html" data-nav-link class="nav-link">The condition</a>
     <a href="managing.html" data-nav-link class="nav-link">Managing it</a>
     <a href="care-team.html" data-nav-link class="nav-link">Your care team</a>
     <a href="contact.html" data-nav-link class="nav-link">Contact &amp; help</a>
+    <a href="index.html#urgent" class="btn btn-urgent w-full">Urgent help</a>
   </div>
 </header>
 
 <main id="main">
 
-<section class="relative overflow-hidden border-b border-[var(--line)]">
-  <div class="absolute inset-0 dot-field-light" aria-hidden="true"></div>
-  <div class="max-w-6xl mx-auto px-5 md:px-10 pt-14 pb-12 md:pt-20 md:pb-16 relative grid md:grid-cols-[1fr_1.1fr] gap-12" data-reveal>
+<section class="border-b" style="border-color:var(--line);background:var(--bg-soft)">
+  <div class="max-w-6xl mx-auto px-5 md:px-10 pt-12 pb-10 md:pt-16 md:pb-14 grid md:grid-cols-[1fr_1.1fr] gap-12">
     <div>
-      <p class="text-[var(--terracotta-deep)] text-sm mb-3">Contact &amp; help</p>
-      <h1 class="font-display text-4xl md:text-[2.75rem] leading-tight text-[var(--ink)]">Ask a question</h1>
-      <p class="mt-5 text-[15.5px] leading-relaxed text-[var(--ink-soft)] prose-measure">
-        Describe what you're noticing &mdash; the spot, when you first saw it, and how your eye feels &mdash; and we'll point you toward the right next step. If you'd like an interpreter, a support person or a longer appointment, just say so.
-      </p>
-      <div class="callout-urgent p-4 mt-6">
-        <p class="text-[14px] text-[var(--ink)]"><strong>This is not an emergency service.</strong> For sudden vision loss, severe pain, an eye injury or a chemical splash, call <strong>000</strong> or go to an eye emergency department &mdash; in Victoria, the Royal Victorian Eye and Ear Hospital (24 hours).</p>
+      <h1 class="text-3xl md:text-[2.75rem] font-bold leading-tight" style="color:var(--ink)">Ask a question</h1>
+      <p class="mt-5 text-[15.5px] measure" style="color:var(--ink-soft)">Describe what you are noticing, such as the spot, when you first saw it, and how your eye feels, and we will point you toward the right next step. If you would like an interpreter, a support person or a longer appointment, please say so.</p>
+      <div class="note-urgent p-4 mt-6">
+        <p class="text-[14px]" style="color:var(--ink)"><strong>This is not an emergency service.</strong> For sudden vision loss, severe pain, an eye injury or a chemical splash, call 000 or go to an eye emergency department. In Victoria, that is the Royal Victorian Eye and Ear Hospital, open 24 hours.<sup class="cite"><a href="#references">[16]</a></sup></p>
       </div>
     </div>
     <div>
-      <form id="contact-form" novalidate class="card-edge rounded-2xl p-6 md:p-8 bg-white/60">
+      <form id="contact-form" novalidate class="panel p-6 md:p-8">
         <div class="mb-5">
-          <label for="name" class="block text-sm mb-2 text-[var(--ink)]">Name</label>
+          <label for="name" class="block text-sm mb-2" style="color:var(--ink)">Name</label>
           <input id="name" name="name" type="text" class="field" placeholder="Your name">
-          <p id="name-error" class="hidden text-xs mt-2 text-[var(--urgent)]"></p>
+          <p id="name-error" class="hidden text-xs mt-2" style="color:var(--urgent)"></p>
         </div>
         <div class="mb-5">
-          <label for="email" class="block text-sm mb-2 text-[var(--ink)]">Email</label>
+          <label for="email" class="block text-sm mb-2" style="color:var(--ink)">Email</label>
           <input id="email" name="email" type="email" class="field" placeholder="you@example.com">
-          <p id="email-error" class="hidden text-xs mt-2 text-[var(--urgent)]"></p>
+          <p id="email-error" class="hidden text-xs mt-2" style="color:var(--urgent)"></p>
         </div>
         <div class="mb-5">
-          <label for="topic" class="block text-sm mb-2 text-[var(--ink)]">What's this about?</label>
+          <label for="topic" class="block text-sm mb-2" style="color:var(--ink)">What is this about?</label>
           <select id="topic" name="topic" class="field">
-            <option>A new spot I've noticed</option>
+            <option>A new spot I have noticed</option>
             <option>Redness or irritation</option>
             <option>Prevention and sunglasses advice</option>
             <option>Contact lenses feeling uncomfortable</option>
@@ -76,12 +85,12 @@
           </select>
         </div>
         <div class="mb-6">
-          <label for="message" class="block text-sm mb-2 text-[var(--ink)]">Message</label>
+          <label for="message" class="block text-sm mb-2" style="color:var(--ink)">Message</label>
           <textarea id="message" name="message" rows="5" class="field resize-none" placeholder="What are you noticing, and since when?"></textarea>
-          <p id="message-error" class="hidden text-xs mt-2 text-[var(--urgent)]"></p>
+          <p id="message-error" class="hidden text-xs mt-2" style="color:var(--urgent)"></p>
         </div>
-        <button type="submit" class="btn-primary w-full py-3 rounded-full text-[15px] font-medium">Send message</button>
-        <p id="form-status" role="status" aria-live="polite" class="text-sm mt-4 text-[var(--ink-soft)]"></p>
+        <button type="submit" class="btn btn-primary w-full">Send message</button>
+        <p id="form-status" role="status" aria-live="polite" class="text-sm mt-4" style="color:var(--ink-soft)"></p>
       </form>
     </div>
   </div>
@@ -89,68 +98,72 @@
 
 <div class="max-w-6xl mx-auto px-5 md:px-10">
 
-  <!-- Support services -->
-  <section class="py-12 md:py-16 border-b border-[var(--line)]">
-    <h2 class="font-display text-2xl md:text-[1.75rem] text-[var(--ink)] mb-2">Support and eye-health services</h2>
-    <p class="text-[15px] text-[var(--ink-soft)] mb-6 prose-measure">Trusted places to find an eye care provider, learn more, or get culturally safe support.</p>
+  <section class="py-12 md:py-16 border-b" style="border-color:var(--line)">
+    <h2 class="text-2xl font-bold mb-2" style="color:var(--ink)">Support and eye-health services</h2>
+    <p class="text-[15px] mb-6 measure" style="color:var(--ink-soft)">Trusted places to find an eye care provider, learn more, or get culturally safe support.</p>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      <a href="https://www.optometry.org.au/" class="card-edge rounded-xl p-5 bg-[var(--cream)] hover:bg-[var(--cream-deep)]/50 transition-colors">
-        <h3 class="font-medium text-[var(--ink)] mb-1">Optometry Australia</h3>
-        <p class="text-sm text-[var(--ink-soft)]">Find an optometrist and general eye-health information.</p>
+      <a href="https://www.optometry.org.au/" class="panel p-5 hover:border-[color:var(--ink)] transition-colors">
+        <h3 class="font-semibold mb-1" style="color:var(--ink)">Optometry Australia</h3>
+        <p class="text-sm" style="color:var(--ink-soft)">Find an optometrist and read general eye-health information.</p>
       </a>
-      <a href="https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/pterygium" class="card-edge rounded-xl p-5 bg-[var(--cream)] hover:bg-[var(--cream-deep)]/50 transition-colors">
-        <h3 class="font-medium text-[var(--ink)] mb-1">Better Health Channel</h3>
-        <p class="text-sm text-[var(--ink-soft)]">Victorian Government plain-language health information.</p>
+      <a href="https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/pterygium" class="panel p-5 hover:border-[color:var(--ink)] transition-colors">
+        <h3 class="font-semibold mb-1" style="color:var(--ink)">Better Health Channel</h3>
+        <p class="text-sm" style="color:var(--ink-soft)">Victorian Government plain-language health information.</p>
       </a>
-      <a href="https://www.eyeandear.org.au/" class="card-edge rounded-xl p-5 bg-[var(--cream)] hover:bg-[var(--cream-deep)]/50 transition-colors">
-        <h3 class="font-medium text-[var(--ink)] mb-1">Royal Victorian Eye &amp; Ear Hospital</h3>
-        <p class="text-sm text-[var(--ink-soft)]">24-hour eye emergency department in Melbourne.</p>
+      <a href="https://www.eyeandear.org.au/" class="panel p-5 hover:border-[color:var(--ink)] transition-colors">
+        <h3 class="font-semibold mb-1" style="color:var(--ink)">Royal Victorian Eye and Ear Hospital</h3>
+        <p class="text-sm" style="color:var(--ink-soft)">24-hour eye emergency department in Melbourne.</p>
       </a>
-      <a href="https://www.hollows.org/au/home" class="card-edge rounded-xl p-5 bg-[var(--cream)] hover:bg-[var(--cream-deep)]/50 transition-colors">
-        <h3 class="font-medium text-[var(--ink)] mb-1">The Fred Hollows Foundation</h3>
-        <p class="text-sm text-[var(--ink-soft)]">Aboriginal and Torres Strait Islander eye health.</p>
+      <a href="https://www.hollows.org/au/home" class="panel p-5 hover:border-[color:var(--ink)] transition-colors">
+        <h3 class="font-semibold mb-1" style="color:var(--ink)">The Fred Hollows Foundation</h3>
+        <p class="text-sm" style="color:var(--ink-soft)">Aboriginal and Torres Strait Islander eye health.</p>
       </a>
-      <a href="https://www.naccho.org.au/" class="card-edge rounded-xl p-5 bg-[var(--cream)] hover:bg-[var(--cream-deep)]/50 transition-colors">
-        <h3 class="font-medium text-[var(--ink)] mb-1">NACCHO / your local ACCHO</h3>
-        <p class="text-sm text-[var(--ink-soft)]">Culturally safe community-controlled health services.</p>
+      <a href="https://www.naccho.org.au/" class="panel p-5 hover:border-[color:var(--ink)] transition-colors">
+        <h3 class="font-semibold mb-1" style="color:var(--ink)">NACCHO and your local ACCHO</h3>
+        <p class="text-sm" style="color:var(--ink-soft)">Culturally safe community-controlled health services.</p>
       </a>
-      <a href="https://www.sunsmart.com.au/" class="card-edge rounded-xl p-5 bg-[var(--cream)] hover:bg-[var(--cream-deep)]/50 transition-colors">
-        <h3 class="font-medium text-[var(--ink)] mb-1">SunSmart (Cancer Council)</h3>
-        <p class="text-sm text-[var(--ink-soft)]">Sun and UV protection, including for the eyes.</p>
+      <a href="https://www.sunsmart.com.au/" class="panel p-5 hover:border-[color:var(--ink)] transition-colors">
+        <h3 class="font-semibold mb-1" style="color:var(--ink)">SunSmart (Cancer Council)</h3>
+        <p class="text-sm" style="color:var(--ink-soft)">Sun and UV protection, including for the eyes.</p>
       </a>
     </div>
   </section>
 
-  <!-- References -->
-  <section id="references" class="py-12 md:py-16 scroll-mt-24">
-    <h2 class="font-display text-2xl md:text-[1.75rem] text-[var(--ink)] mb-3">References and evidence</h2>
-    <div class="callout p-5 mb-8">
-      <p class="text-[14px] text-[var(--ink)] prose-measure">This site is built on a mix of source types, so you can weigh how reliable each is: <strong>research evidence</strong> (population studies and reviews, refs 6&ndash;8, 16, 18), <strong>clinical references and guidelines</strong> (refs 1, 3, 5, 17), <strong>government and authoritative health information</strong> (refs 2, 4, 9&ndash;11, 13, 23), and <strong>support and community organisations</strong> (refs 14&ndash;15, 19&ndash;22). References follow the Vancouver style. A fuller citation-manager library underpins this content beyond the sources listed here.</p>
+  <section id="references" class="py-12 md:py-16 scroll-mt-20">
+    <h2 class="text-2xl font-bold mb-3" style="color:var(--ink)">References and evidence</h2>
+    <div class="note p-5 mb-8">
+      <p class="text-[14px] measure" style="color:var(--ink)">This site draws on several types of source, so you can weigh how each one is used. <strong>Peer-reviewed research</strong> (references 5 to 12 and 14 to 17, and 23) reports original studies and reviews. <strong>Clinical references and guidelines</strong> (references 1, 2, 3 and 13) summarise accepted practice. <strong>Government, standards and professional bodies</strong> (references 4, 18 to 22 and 29) set out official guidance. <strong>Support and community organisations</strong> (references 24 to 28) offer services and culturally safe resources. All references follow the Vancouver style.</p>
     </div>
-    <ol class="text-[13.5px] leading-relaxed text-[var(--ink-soft)] space-y-3" style="list-style:decimal; padding-left:1.4rem;">
+    <ol class="text-[13.5px] space-y-3" style="color:var(--ink-soft);list-style:decimal;padding-left:1.4rem;">
       <li id="ref1">Somnath A, Tripathy K. Pinguecula. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2023 [cited 2026 Sep 2]. Available from: https://www.ncbi.nlm.nih.gov/books/NBK558965/</li>
-      <li id="ref2">Cleveland Clinic. Pinguecula: what it is, symptoms, causes &amp; treatment [Internet]. Cleveland (OH): Cleveland Clinic; 2025 [cited 2026 Sep 2]. Available from: https://my.clevelandclinic.org/health/diseases/23443-pinguecula</li>
-      <li id="ref3">American Academy of Ophthalmology. What is a pinguecula and a pterygium (surfer's eye)? [Internet]. San Francisco (CA): AAO; 2026 [cited 2026 Sep 2]. Available from: https://www.aao.org/eye-health/diseases/pinguecula-pterygium</li>
+      <li id="ref2">American Academy of Ophthalmology. What is a pinguecula and a pterygium (surfer's eye)? [Internet]. San Francisco (CA): AAO; 2026 [cited 2026 Sep 2]. Available from: https://www.aao.org/eye-health/diseases/pinguecula-pterygium</li>
+      <li id="ref3">Cleveland Clinic. Pinguecula [Internet]. Cleveland (OH): Cleveland Clinic; 2025 [cited 2026 Sep 2]. Available from: https://my.clevelandclinic.org/health/diseases/23443-pinguecula</li>
       <li id="ref4">Better Health Channel. Pterygium [Internet]. Melbourne: Victorian Government Department of Health [cited 2026 Sep 2]. Available from: https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/pterygium</li>
-      <li id="ref5">Johns Hopkins Medicine. Pinguecula and pterygium [Internet]. Baltimore (MD): Johns Hopkins Medicine; 2026 [cited 2026 Sep 2]. Available from: https://www.hopkinsmedicine.org/health/conditions-and-diseases/pinguecula-and-pterygium</li>
-      <li id="ref6">Panchapakesan J, Hourihan F, Mitchell P. Prevalence of pterygium and pinguecula: the Blue Mountains Eye Study. Aust N Z J Ophthalmol. 1998;26 Suppl 1:S2-5.</li>
-      <li id="ref7">Hashemi A, Aghamirsalim M, Hashemi H, Malekifar P, Khabazkhoob M. Prevalence of pterygium and pinguecula and their risk factors: Tehran Geriatric Eye Study. Int J Ophthalmol. 2025;18(4):[cited 2026 Sep 2]. Available from: https://pubmed.ncbi.nlm.nih.gov/40256028/</li>
-      <li id="ref8">Rezvan F, Khabazkhoob M, Hooshmand E, Yekta A, Saatchi M, Ostadimoghaddam H, et al. Prevalence and risk factors of pterygium: a systematic review and meta-analysis. Surv Ophthalmol. 2018;63(5):719-735.</li>
-      <li id="ref9">Cancer Council Australia. Fact sheet: eye protection [Internet]. Sydney: Cancer Council Australia [cited 2026 Sep 2]. Available from: https://www.cancer.org.au/about-us/policy-and-advocacy/prevention/uv-radiation/related-resources/fact-sheet-eye-protection</li>
-      <li id="ref10">Australian Radiation Protection and Nuclear Safety Agency. Sun protection using sunglasses [Internet]. Melbourne: ARPANSA [cited 2026 Sep 2]. Available from: https://www.arpansa.gov.au/understanding-radiation/radiation-sources/more-radiation-sources/sun-protection-sunglasses</li>
-      <li id="ref11">Cancer Council Australia. Be SunSmart [Internet]. Sydney: Cancer Council Australia [cited 2026 Sep 2]. Available from: https://www.cancer.org.au/cancer-information/causes-and-prevention/sun-safety/be-sunsmart</li>
-      <li id="ref12">Kiely PM, Slater J. Optometry Australia Scope of Practice Survey 2015. Clin Exp Optom. 2017;100(3):260-269.</li>
-      <li id="ref13">Optometry Australia. Optometric scope of practice [Internet]. Melbourne: Optometry Australia [cited 2026 Sep 2]. Available from: https://www.optometry.org.au/advocacy/issues-at-a-glance/optometric-scope-of-practice/</li>
-      <li id="ref14">The Fred Hollows Foundation. Aboriginal and Torres Strait Islander eye health [Internet]. Sydney: The Fred Hollows Foundation [cited 2026 Sep 2]. Available from: https://www.hollows.org/indigenous-australia/</li>
-      <li id="ref15">Vision 2020 Australia. Strong eyes, strong communities: a five-year plan for Aboriginal and Torres Strait Islander eye health 2019-2024. Melbourne: Vision 2020 Australia; 2019.</li>
-      <li id="ref16">Foreman J, Xie J, Keel S, van Wijngaarden P, Sandhu SS, Ang GS, et al. The prevalence and causes of vision loss in Indigenous and non-Indigenous Australians: the National Eye Health Survey. Ophthalmology. 2017;124(12):1743-1752.</li>
-      <li id="ref17">College of Optometrists. Clinical management guideline: pinguecula [Internet]. London: College of Optometrists [cited 2026 Sep 2]. Available from: https://www.college-optometrists.org/clinical-guidance/clinical-management-guidelines/pinguecula</li>
-      <li id="ref18">Kaji Y, Oshika T, Amano S, Okamoto F, Koito W, Horiuchi S. Immunohistochemical localisation of advanced glycation end products in pinguecula. Graefes Arch Clin Exp Ophthalmol. 2006;244(1):104-108.</li>
-      <li id="ref19">Australian Indigenous HealthInfoNet. Eye health [Internet]. Perth: Australian Indigenous HealthInfoNet [cited 2026 Sep 2]. Available from: https://healthinfonet.ecu.edu.au/</li>
-      <li id="ref20">Indigenous Eye Health Unit, University of Melbourne. The roadmap to close the gap for vision [Internet]. Melbourne: University of Melbourne [cited 2026 Sep 2]. Available from: https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-eye-health</li>
-      <li id="ref21">National Aboriginal Community Controlled Health Organisation. Aboriginal Community Controlled Health Organisations (ACCHOs) [Internet]. Canberra: NACCHO [cited 2026 Sep 2]. Available from: https://www.naccho.org.au/</li>
-      <li id="ref22">Wurundjeri Woi Wurrung Cultural Heritage Aboriginal Corporation. Welcome to Country [Internet]. Melbourne: Wurundjeri Woi Wurrung Cultural Heritage Aboriginal Corporation [cited 2026 Sep 2]. Available from: https://www.wurundjeri.com.au/</li>
-      <li id="ref23">Standards Australia. AS/NZS 1067.1:2016 Eye and face protection &mdash; sunglasses and fashion spectacles. Sydney: Standards Australia; 2016.</li>
+      <li id="ref5">Coroneo MT, Di Girolamo N, Wakefield D. The pathogenesis of pterygia. Curr Opin Ophthalmol. 1999;10(4):282-288.</li>
+      <li id="ref6">Threlfall TJ, English DR. Sun exposure and pterygium of the eye: a dose-response curve. Am J Ophthalmol. 1999;128(3):280-287.</li>
+      <li id="ref7">Panchapakesan J, Hourihan F, Mitchell P. Prevalence of pterygium and pinguecula: the Blue Mountains Eye Study. Aust N Z J Ophthalmol. 1998;26 Suppl 1:S2-5.</li>
+      <li id="ref8">Viso E, Gude F, Rodriguez-Ares MT. Prevalence of pinguecula and pterygium in a general population in Spain. Eye (Lond). 2011;25(3):350-357.</li>
+      <li id="ref9">Fotouhi A, Hashemi H, Khabazkhoob M, Mohammad K. Prevalence and risk factors of pterygium and pinguecula: the Tehran Eye Study. Eye (Lond). 2009;23(5):1125-1129.</li>
+      <li id="ref10">Rezvan F, Khabazkhoob M, Hooshmand E, Yekta A, Saatchi M, Ostadimoghaddam H, et al. Prevalence and risk factors of pterygium: a systematic review and meta-analysis. Surv Ophthalmol. 2018;63(5):719-735.</li>
+      <li id="ref11">Mackenzie FD, Hirst LW, Battistutta D, Green A. Risk analysis in the development of pterygia. Ophthalmology. 1992;99(7):1056-1061.</li>
+      <li id="ref12">Kaji Y, Oshika T, Amano S, Okamoto F, Koito W, Horiuchi S. Immunohistochemical localisation of advanced glycation end products in pinguecula. Graefes Arch Clin Exp Ophthalmol. 2006;244(1):104-108.</li>
+      <li id="ref13">Hirst LW. The treatment of pterygium. Surv Ophthalmol. 2003;48(2):145-180.</li>
+      <li id="ref14">Cronau H, Kankanala RR, Mauger T. Diagnosis and management of red eye in primary care. Am Fam Physician. 2010;81(2):137-144.</li>
+      <li id="ref15">Pflipsen M, Massaquoi M, Wolf S. Evaluation of the painful eye. Am Fam Physician. 2016;93(12):991-998.</li>
+      <li id="ref16">Gelston CD, Deitz GA. Eye emergencies. Am Fam Physician. 2020;102(9):539-545.</li>
+      <li id="ref17">Dietrich HLD, Zoroquiain P, Logan P, Ceballos F, Antecka E, Burnier MN. Clinically unsuspected ocular surface squamous neoplasia and melanocytic conjunctival lesions in pinguecula and pterygium: a 20-year survey. Invest Ophthalmol Vis Sci. 2014;55(13):1585.</li>
+      <li id="ref18">Cancer Council Australia. Eye protection [fact sheet, Internet]. Sydney: Cancer Council Australia [cited 2026 Sep 2]. Available from: https://www.cancer.org.au/about-us/policy-and-advocacy/prevention/uv-radiation/related-resources/fact-sheet-eye-protection</li>
+      <li id="ref19">Australian Radiation Protection and Nuclear Safety Agency. Sun protection using sunglasses [Internet]. Melbourne: ARPANSA [cited 2026 Sep 2]. Available from: https://www.arpansa.gov.au/understanding-radiation/radiation-sources/more-radiation-sources/sun-protection-sunglasses</li>
+      <li id="ref20">Standards Australia. AS/NZS 1067.1:2016 Eye and face protection: sunglasses and fashion spectacles. Sydney: Standards Australia; 2016.</li>
+      <li id="ref21">Kiely PM, Slater J. Optometry Australia Scope of Practice Survey 2015. Clin Exp Optom. 2017;100(3):260-269.</li>
+      <li id="ref22">Optometry Australia. Optometric scope of practice [Internet]. Melbourne: Optometry Australia [cited 2026 Sep 2]. Available from: https://www.optometry.org.au/advocacy/issues-at-a-glance/optometric-scope-of-practice/</li>
+      <li id="ref23">Foreman J, Xie J, Keel S, van Wijngaarden P, Sandhu SS, Ang GS, et al. The prevalence and causes of vision loss in Indigenous and non-Indigenous Australians: the National Eye Health Survey. Ophthalmology. 2017;124(12):1743-1752.</li>
+      <li id="ref24">The Fred Hollows Foundation. Aboriginal and Torres Strait Islander eye health [Internet]. Sydney: The Fred Hollows Foundation [cited 2026 Sep 2]. Available from: https://www.hollows.org/au/home</li>
+      <li id="ref25">Vision 2020 Australia. Strong eyes, strong communities: a five-year plan for Aboriginal and Torres Strait Islander eye health 2019-2024. Melbourne: Vision 2020 Australia; 2019.</li>
+      <li id="ref26">National Aboriginal Community Controlled Health Organisation. Aboriginal Community Controlled Health Organisations [Internet]. Canberra: NACCHO [cited 2026 Sep 2]. Available from: https://www.naccho.org.au/</li>
+      <li id="ref27">Australian Indigenous HealthInfoNet. Eye health [Internet]. Perth: Australian Indigenous HealthInfoNet [cited 2026 Sep 2]. Available from: https://healthinfonet.ecu.edu.au/</li>
+      <li id="ref28">Wurundjeri Woi Wurrung Cultural Heritage Aboriginal Corporation. Welcome to Country [Internet]. Melbourne: Wurundjeri Woi Wurrung Cultural Heritage Aboriginal Corporation [cited 2026 Sep 2]. Available from: https://www.wurundjeri.com.au/</li>
+      <li id="ref29">Orthoptics Australia. What is an orthoptist? [Internet]. Melbourne: Orthoptics Australia [cited 2026 Sep 2]. Available from: https://www.orthoptics.org.au/</li>
     </ol>
   </section>
 
@@ -158,18 +171,18 @@
 
 </main>
 
-<footer class="border-t border-[var(--line)] bg-[var(--cream-deep)]/40">
+<footer class="border-t" style="border-color:var(--line);background:var(--bg-soft)">
   <div class="max-w-6xl mx-auto px-5 md:px-10 py-10">
-    <div class="callout p-5 mb-8">
-      <p class="text-[14px] text-[var(--ink)] prose-measure"><strong>Acknowledgement of Country.</strong> We acknowledge the Wurundjeri Woi-wurrung and Bunurong/Boon Wurrung peoples of the Kulin Nation as the Traditional Owners of the land on which our Melbourne practice stands. We pay our respects to their Elders past and present, and recognise their continuing connection to land, waters and culture.<sup class="cite"><a href="#ref22">[22]</a></sup></p>
+    <div class="note p-5 mb-8">
+      <p class="text-[14px] measure" style="color:var(--ink)"><strong>Acknowledgement of Country.</strong> We acknowledge the Wurundjeri Woi-wurrung and Bunurong peoples of the Kulin Nation as the Traditional Owners of the land on which this Melbourne practice stands. We pay our respects to their Elders past and present, and recognise their continuing connection to land, waters and culture.<sup class="cite"><a href="#ref28">[28]</a></sup></p>
     </div>
     <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-      <div class="flex items-center gap-3">
-        <img src="assets/logo.png" alt="Pinguecula logo" class="w-7 h-7 rounded">
-        <span class="font-display text-lg text-[var(--terracotta-ink)]">pinguecula</span>
+      <div class="flex items-center gap-2.5">
+        <img src="logo.png" alt="Pinguecula.care logo" class="w-7 h-7 rounded">
+        <span class="wordmark text-lg">pinguecula.care</span>
       </div>
-      <p class="text-xs text-[var(--ink-soft)] max-w-md">This website provides general information only and is not a substitute for advice from a qualified eye care professional. Always seek personal assessment for your own eyes.</p>
-      <p class="text-xs text-[var(--ink-soft)]">&copy; 2026 Pinguecula patient guide</p>
+      <p class="text-xs max-w-md" style="color:var(--ink-soft)">General information only, not a substitute for advice from a qualified eye care professional. Always seek a personal assessment for your own eyes.</p>
+      <p class="text-xs" style="color:var(--ink-soft)">Published by Tasha Tahir, first-year optometry student. &copy; 2026.</p>
     </div>
   </div>
 </footer>
