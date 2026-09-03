@@ -5,7 +5,7 @@ sun-related growth on the white of the eye. Written in plain language for
 patients in Victoria, Australia, and supported by clinical guidelines and
 peer-reviewed research. No framework and no server: it deploys as static files.
 
-Published by Tasha Tahir, first-year optometry student.
+Published by Tasha Tahir, optometry student.
 
 ## Pages
 
